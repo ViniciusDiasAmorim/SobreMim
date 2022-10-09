@@ -399,6 +399,10 @@ h1 {
 }
 @media screen and (max-width:600px) {
    
+    nav {
+        height: 150px;
+    }
+
     .menu_list {
     justify-content: right;
    }
