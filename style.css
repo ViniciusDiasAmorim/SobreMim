@@ -408,7 +408,9 @@ h1 {
     }
     .skills__box,.hobbies__box,.projetos__box {
         width: auto;
+        height: auto;
     }
+  
     .imagem-perfil {
         margin-left: -50px;
     }
