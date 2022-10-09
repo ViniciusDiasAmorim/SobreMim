@@ -147,8 +147,7 @@ h1 {
 
 .imagem-perfil {
     text-align: center;
-    margin-right: 1%;
-    margin-top: 2%;
+    margin-top: 20px;
 }
 
 .sobreMim_texto_botoes {
@@ -409,6 +408,9 @@ h1 {
     }
     .skills__box,.hobbies__box,.projetos__box {
         width: auto;
+    }
+    .imagem-perfil {
+        margin-left: -50px;
     }
 
 }
