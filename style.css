@@ -23,6 +23,7 @@
 body {
     background-color: aliceblue;
     background-color: var(--cor-de-fundo-escuro);
+    overflow-x: hidden;
 }
 
 li {
@@ -125,23 +126,22 @@ h1 {
   }
 /* ------------------------------------------------------------------------------------------- */
 .sobreMim {
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0 auto;
     margin-top: 50px;
+    
 }
 .sobreMim  > h2{
-    text-align: center;
     font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .sobreMim_texto {
-    font-size: 20px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 15px;
+    margin: 0 auto;
     text-align: center;
+    width: 100%;
+    font-size: 20px;
     width: 50%;
 }
 
@@ -154,7 +154,6 @@ h1 {
 .sobreMim_texto_botoes {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 10%;
 }
 
@@ -165,7 +164,6 @@ h1 {
     width: 150px;
     height: 40px;
     text-decoration: none;
-    overflow: hidden;
     transition: .3;
 }
 .sobreMim_botao:hover{
@@ -180,7 +178,7 @@ h1 {
 .hobbies {
     margin-top: 50px;
     background-color: #8a2be2;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .img__hobbies {
@@ -200,6 +198,7 @@ h1 {
 .hobbies__box {
     width: 33%;
     margin-top: 25%;
+    margin-bottom: 10%;
 }
 /* #2800F5 #0B21DE #0415D1 */
 
@@ -220,7 +219,7 @@ h1 {
 
 .skills {
     margin-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
 }
 .skills__title {
     font-size: 2em;
@@ -254,7 +253,7 @@ h1 {
 /* ---------------------------------------------------------------------------------------------------------- */
 .formacao {
     margin-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #8a2be2 ;
 }
 
@@ -267,15 +266,16 @@ h1 {
 .formacao__cursos {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
     text-align: center;
     justify-content: space-around;
     margin: 0 auto;
 }
 
 .formacao__cursos__box {
-    width: 33%;
-    margin-top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .formacao__cursos__item__img {
@@ -286,6 +286,7 @@ h1 {
 /* ----------------------------------------------------------------------------------------------------------- */
 .projetos {
     margin-top: 50px;
+    min-height: 100vh;
 }
 
 .projetos__titulo {
@@ -299,7 +300,7 @@ h1 {
     flex-wrap: wrap;
     width: 90%;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -308,7 +309,6 @@ h1 {
     width: 45%;
     height: 500px;
     margin-top: 5%;
-    border: 1px solid white;
 }
 
 .projetos__box:hover {
@@ -350,13 +350,9 @@ h1 {
 
 .projeto__link__repo:hover,.projeto__link__demo:hover {
     background-color: #7F1F8C;
-    /* box-shadow: 0 0 10px #2800F5, 0 0 15px  #0B21DE, 0 0 30px #0415D1;
     transition-duration: 0.5s;
-    transition-delay: 0.1s; */
+    transition-delay: 0.1s;
 }
-
-
-
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
@@ -365,4 +361,31 @@ h1 {
     background-color: #8a2be2;
     text-align: center;
     padding: 50px;
+}
+
+@media screen and (max-width:780px) {
+    .sobreMim_texto_botoes {
+        flex-direction: column;
+        height: 200px;        
+    }
+
+    .sobreMim_botao {
+        margin: 0 auto;
+    }
+
+    .hobbies__line {
+        flex-direction: column;
+    }
+
+    .skills__line {
+        flex-direction: column;
+    }
+    .projetos__box__line {
+        flex-direction: column;
+    }
+
+    .hobbies__box,.skills__box,.projetos__box {
+        margin-left: auto;
+        margin-right: auto;
+    } 
 }
