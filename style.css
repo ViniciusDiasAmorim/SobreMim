@@ -34,8 +34,8 @@ li {
     visibility: hidden;
 }
 nav {
-    margin-top: 25px;
     display: flex;
+    margin-top: 25px;
     margin-left: 1%;
 }
 
@@ -198,7 +198,6 @@ h1 {
 .hobbies__box {
     width: 33%;
     margin-top: 25%;
-    margin-bottom: 10%;
 }
 /* #2800F5 #0B21DE #0415D1 */
 
@@ -363,7 +362,8 @@ h1 {
     padding: 50px;
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:850px) {
+    
     .sobreMim_texto_botoes {
         flex-direction: column;
         height: 200px;        
@@ -387,5 +387,28 @@ h1 {
     .hobbies__box,.skills__box,.projetos__box {
         margin-left: auto;
         margin-right: auto;
+        width: auto;
     } 
+
+    .hobbies__box {
+        margin-bottom: 10%;
+    }
+
+    .projetos__box{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width:600px) {
+   
+    .menu_list {
+    justify-content: right;
+   }
+    .menu__item {
+        text-align: center;
+        width: 75%;
+    }
+    .skills__box,.hobbies__box,.projetos__box {
+        width: auto;
+    }
+
 }
