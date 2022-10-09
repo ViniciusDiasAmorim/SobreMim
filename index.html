@@ -1,124 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Folha de estilo de CSS Linkado -->
+    <title>Vinicius Dias Amorim de Matos</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonte do Projeto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Portifólio Pessoal</title>
 </head>
 <body>
-    <!-- Sessão de Menu  -->
-    <div class="all">
     <section class="menu">
-        <header>
-            <h3 class="menu__title"><img src="assets\vector.png"> Vinicius Dias Amorim de Matos</h3>
+        <header> 
+            <nav>
+                <h1>Portfólio</h1>
+                    <ul class="menu_list">
+                        <li class="menu__item"><a href="#sobreMim" class="menu__link">Sobre mim</a> </li>
+                        <li class="menu__item"><a href="#hobbies" class="menu__link">Hobbies</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                        <li class="menu__item"><a href="#formacao" class="menu__link">Formações e Cursos</a></li>
+                        <li class="menu__item"><a href="#projetos" class="menu__link">Projetos</a></li>
+                    </ul>
+            </nav>
         </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="mailto:viniragh@gmail.com">viniragh@gmail.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="mailto:viniragh@gmail.com">viniragh@gmail.com</a></li>
-        </nav>
     </section>
-<!-- Sessão de Header/Title/Hero -->
     <section class="title">
-        <div class="title__div">
-            <div class="title__container" id="#sobremim">
-                <h2 class="title__bio">Olá, meu nome é Vinicius Dias Amorim de Matos e estou estudando Desenvolvimento de Sistemas.</h2>
-                <h3 class="title__subsection">Eu estou matriculado no curso de engenharia da computação e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
-                <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/ViniciusDiasAmorim" target="_blank">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/vinicius-dias-a8495b236/" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets\arrow.png"></a></li>
-                </ul>
+            <div class="container_title_texto">
+                <div class="title_texto">
+                    <p class="title_texto_destaque">Olá meu Nome é</p>
+                    <h2 class="title_texto_nome">Vinícius Dias Amorim de Matos.</h2>
+                    <p class="title_texto_descricao">Eu estou desenvolvendo um aplicativo Web.</p>
+                </div>
             </div>
-            <picture>
-                <source media="(max-width:768px)" srcset="assets/profile_tablet.jpg" type="image/jpg">
-                <img class="title__profile" src="assets\profile.jpg">
-            </picture>
-        </div>
+    
     </section>
-
-       <!-- <picture>
-        <source media="(max-width:950px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
-        <img src="imagens/irina-blok.jpg" alt="imagem da Irina">
-    </picture> -->
-
-        <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph">Me chamo Vinicius, tenho 23 anos, sou residente de São Paulo, e estou estudando programação e desenvolvimento de sistemas,
-                                        gosto muito de tecnologia e inovação, e nas horas vagas sou um bom jogador de xadrez</p>
-            <p class="about__paragraph">Sempre fui muito antenado nas tendencias e tecnologias, sou apaixonado por eletronica e automaçao, e gosto muito de entender processos e oferecer soluçoes e melhorias, sou automotivadado e sempre estou em busca de melhorar.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-          
-            <img src="assets\signature.png">
-
-        </div>
+    <section class="sobreMim" id="sobreMim">
+        <h2>Sobre mim</h2>
+            <div class="sobreMim_texto">
+                <p> Me chamo Vinícius Dias, tenho 23 anos de idade, sou residente de São Paulo estou estudando programação,
+                    gosto muito de tecnologia e inovação.
+                </p>
+                <p>
+                    Tive meu primeiro contato com a programação em 2016, no SENAI que me possibilitou programar microcontroladores, desde entao sou apaixonado pela area.
+                </p>
+                <p>
+                    Estou buscando me tornar um desenvolvedor full stack estou estudando C# e Java, a procura da minha primeira vaga na area de programação.
+                </p>
+                <img src="assets/profile.jpg" alt="imagem do Vinicius" class="imagem-perfil">
+                <br>
+                <div class="sobreMim_texto_botoes">
+                   <a href="https://github.com/ViniciusDiasAmorim" target="_blank" class="sobreMim_botao" >GitHub <img src="assets\arrow.png"></a>
+                   <a href="https://www.linkedin.com/in/vinicius-dias-a8495b236/" target="_blank" class="sobreMim_botao">Linkedin <img src="assets\arrow.png"></a>
+                   <a href="#" class="sobreMim_botao">Currículo <img src="assets\arrow.png"></a>
+                </div>
+            </div>
     </section>
-
-    <!-- Sessão de Skills/Habilidades -->
-    <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets/html_5.png" class="img__skills"></li>
-                        <li class="skills__name"> Html</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/java.png" alt="" class="img__skills"></li>
-                        <li class="skills__name">Java</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets/db.png" alt="" class="img__skills" ></li>
-                        <li class="skills__name">SQL</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/js.png" alt="" class="img__skills"></li>
-                        <li class="skills__name">JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/csharp.png" alt="" class="img__skills"> </li>
-                        <li class="skills__name">C#</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/css_3.png" alt="" class="img__skills"> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-                
-        </div>
-    </section>
-
-<!-- Sessão de Hobbies -->
     <section class="hobbies" id="hobbies">
         <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__line">
@@ -165,104 +100,137 @@
                 </div>
         </div>
     </section>
+    <section class="skills" id="skills">
+        <h3 class="skills__title" id="skills">Skills</h3>
+        <div class="skills__line">
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"> <img src="assets/csharp.png" alt="" class="img__skills"> </li>
+                    <li class="skills__name">C#</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"> <img src="assets/java.png" alt="" class="img__skills"></li>
+                    <li class="skills__name">Java</li>
+                </ul>
+            </div>
 
-    <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li ><img src="assets/logo-univesp.png" class="academic__courses__item__img"></li>
-                    <li class="academic__courses__item__title"><h4>Engenharia da Computação</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Univesp</p></li>
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"><img src="assets/db.png" alt="" class="img__skills" ></li>
+                    <li class="skills__name">SQL</li>
                 </ul>
             </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li ><img src="assets/etec.png" class="academic__courses__item__img"></li>
-                    <li class="academic__courses__item__title"><h4>Técnico em Desenvolvimento de Sistemas</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Etec Getúlio Vargas</p></li>
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"> <img src="assets/js.png" alt="" class="img__skills"></li>
+                    <li class="skills__name">JavaScript</li>
                 </ul>
             </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li ><img src="assets/Oracle_one.png" class="academic__courses__item__img"></li>
-                    <li class="academic__courses__item__title"><h4>Logica de Programaçao, Front-End, Java, Soft-Skills </h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - ONE - Oracle Next Education</p></li>
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"><img src="assets/html_5.png" class="img__skills"></li>
+                    <li class="skills__name"> Html</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <li class="skills__img"> <img src="assets/css_3.png" alt="" class="img__skills"> </li>
+                    <li class="skills__name">CSS</li>
+                </ul>
+            </div>
+    </section>
+    <section class="formacao" id="formacao">
+        <h2 class="formacao__title" id="formacao_titulo">Formação acadêmica</h2>
+        <div class="formacao__cursos">
+            <div class="formacao__cursos__box">
+                <ul class="formacao__curso__list">
+                    <li ><img src="assets/logo-univesp.png" class="formacao__cursos__item__img"></li>
+                    <li class="formacao__cursos__item__title"><h4>Engenharia da Computação</h4></li>
+                    <li class="formacao__cursos__item__subtitle"><p>Em andamento - Univesp</p></li>
+                </ul>
+            </div>
+            <div class="formacao__cursos__box">
+                <ul class="formacao__cursos__list">
+                    <li ><img src="assets/etec.png" class="formacao__cursos__item__img"></li>
+                    <li class="formacao__cursos__item__title"><h4>Técnico em Desenvolvimento de Sistemas</h4></li>
+                    <li class="formacao__cursos__item__subtitle"><p>Em andamento - Etec Getúlio Vargas</p></li>
+                </ul>
+            </div>
+            <div class="formacao__cursos__box">
+                <ul class="formacao__cursos__list">
+                    <li ><img src="assets/Oracle_one.png" class="formacao__cursos__item__img"></li>
+                    <li class="formacao__cursos__item__title"><h4>Logica de Programaçao, Front-End, Java, Soft-Skills </h4></li>
+                    <li class="formacao__cursos__item__subtitle"><p>ONE - Oracle Next Education</p></li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/decodificador1.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+    <section class="projetos" id="projetos">
+        <h2 class="projetos__titulo">Projetos</h2>
+        <div class="projetos__box__line">
+            <div class="projetos__box">
+                    <h2>Venda de Lanches com C#</h2>
+                    <img src="assets/01comeco.png" alt="imagem do projeto de venda de lanches" class="projeto_img">
+                    <p class="projeto__descricao">Aplicativo web contruido com C#, ASP.NET MVC e Identity, tambem com uso de banco de dados MySQL.</p>
+                    <div class="container__botoes">
+                        <a href="https://github.com/ViniciusDiasAmorim/VendaLanches" target="_blank" class="projeto__link__repo">Repositório</a>
                     </div>
             </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <div class="experience__info__jogo"
-                <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+            <div class="projetos__box">
+                    <h2>Sistema de Hotel com Java</h2>
+                    <img src="assets/01menuPrincipal.png" alt="imagem do projeto hotel java" class="projeto_img">
+                    <p class="projeto__descricao">Aplicativo desktop desenvolvido com java e uso da interface grafica swing, com operaçoes CRUD e MySQL.</p>
+                    <div class="container__botoes">
+                        <a href="https://github.com/ViniciusDiasAmorim/HotelJava" target="_blank" class="projeto__link__repo">Repositório</a>
                     </div>
             </div>
-            <img class="experience__img" src="assets/jogo-da-forca1.png">
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/decodificador2.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+            <div class="projetos__box">
+                    <h2>Conversor de Moeda e Temperatura com Java</h2>
+                    <img src="assets/conversor.png" alt="imagem do projeto conversor de Moeda e temperatura" id="projeto_img_conversor">
+                    <p class="projeto__descricao">Aplicativo de conversao contruido com java.</p>
+                    <div class="container__botoes">
+                        <a href="https://github.com/ViniciusDiasAmorim/ConversorDeMoeda" target="_blank" class="projeto__link__repo">Repositório</a>
                     </div>
             </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <div class="experience__info__jogo"
-            <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+            <div class="projetos__box">
+                    <h2>Jogo da Forca com JavaScript</h2>
+                    <img src="assets/jogo-da-forca2.png" alt="imagem do projeto Jogo da forca" class="projeto_img">
+                    <p class="projeto__descricao">Jogo da forca contruido com JavaScript, css e html</p>
+                    <div class="container__botoes">
+                        <a href="https://github.com/ViniciusDiasAmorim/jogo-da-forca" target="_blank" class="projeto__link__repo">Repositório</a>
+                        <a href="https://viniciusdiasamorim.github.io/jogo-da-forca/" target="_blank" class="projeto__link__demo">Ver Demo</a>
                     </div>
             </div>
-            <img class="experience__img" src="assets/jogo-da-forca2.png">
+            <div class="projetos__box">
+                <h2>Decodificador e Codificador de texto com JavaScript</h2>
+                <img src="assets/decodificador2.png" alt="imagem do projeto Codificador e Decodificador" class="projeto_img">
+                <p class="projeto__descricao">Este app Web basicamente codifica mensagens baseado na logica definida no programa e decodifica tambem.</p>
+                <div class="container__botoes">
+                    <a href="https://github.com/ViniciusDiasAmorim/Decodificador-de-textos" target="_blank" class="projeto__link__repo">Repositório</a>
+                    <a href="https://viniciusdiasamorim.github.io/Decodificador-de-textos/" target="_blank" class="projeto__link__demo">Ver Demo</a>
+                </div>
+            </div>
+            <div class="projetos__box">
+                <h2>Pagina com efeito parallax</h2>
+                <img src="assets/parallax.png" alt="imagem da pagina" class="projeto_img">
+                <p class="projeto__descricao">Esta pagina foi contruida com html e css, e foi aplicado o efeito parallax. </p>
+                <div class="container__botoes">
+                    <a href="https://github.com/ViniciusDiasAmorim/Parallax" target="_blank" class="projeto__link__repo">Repositório</a>
+                    <a href="https://viniciusdiasamorim.github.io/Parallax/" target="_blank" class="projeto__link__demo">Ver Demo</a>
+                </div>
+            </div>
         </div>
-        
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desenvolvido por Vinicius Dias Amorim de Matos.</p>
-                <p>2022</p>
-            </div>
-        </section>
-    </div>
+    </section>
+  
+    <footer class="footer">
+        <div class="footer__rodape">
+            <p>Desenvolvido por Vinicius Dias Amorim de Matos.</p>
+            <p>2022</p>
+        </div>
+    </footer>
+
+   <script src="main.js"></script>
 </body>
 </html>
-
