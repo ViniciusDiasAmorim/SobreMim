@@ -256,29 +256,37 @@ h1 {
 }
 
 .formacao__title {
+    margin-top: 2em;
     font-size: 2em;
     text-align: center;
     padding: 5px;
 }
 
-.formacao__cursos {
+.formacao__cursos,.formacao__cursos__complementares {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     text-align: center;
     justify-content: space-around;
     margin: 0 auto;
 }
 
-.formacao__cursos__box {
+.formacao__cursos__box, .formacao__cursos__complementares__box {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .formacao__cursos__item__img {
     max-width: 250px;
     max-height: 250px;
+}
+
+.formacao__cursos__img__complementar {
+    width: 250px;
+    height: 150px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -391,6 +399,9 @@ h1 {
 
     .hobbies__box {
         margin-bottom: 10%;
+    }
+    .formacao__cursos__box, .formacao__cursos__complementares__box {
+        width: 100%;
     }
 
     .projetos__box{
