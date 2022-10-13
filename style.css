@@ -413,7 +413,9 @@ h1 {
     nav {
         height: 150px;
     }
-
+    .sobreMim_texto {
+        font-size: 1em;
+    }
     .menu_list {
     justify-content: right;
    }
