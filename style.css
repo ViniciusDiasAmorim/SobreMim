@@ -415,6 +415,7 @@ h1 {
     }
     .sobreMim_texto {
         font-size: 1em;
+        width: 100%;
     }
     .menu_list {
     justify-content: right;
