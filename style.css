@@ -241,6 +241,13 @@ h1 {
     max-width: 128px;
     max-height: 128px;
 }
+.skills__name {
+    margin: 1em 0;
+}
+.skills__box p {
+    color:black;
+    margin-top: 1em;
+}
 
 .skills__box:hover {
     background: #8a2be2;
@@ -248,6 +255,13 @@ h1 {
     transition-duration: 0.5s;
     transition-delay: 0.1s;
 }
+
+.skills__box:hover p {
+    color: white;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+}
+
 /* ---------------------------------------------------------------------------------------------------------- */
 .formacao {
     margin-top: 50px;
@@ -290,6 +304,7 @@ h1 {
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
+
 .projetos {
     margin-top: 50px;
     min-height: 100vh;
