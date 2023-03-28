@@ -295,13 +295,15 @@ h1 {
 
 .formacao__cursos__item__img {
     max-width: 250px;
-    max-height: 250px;
+    max-height: 100px;
+    min-width: 150px;
 }
 
 .formacao__cursos__img__complementar {
     width: 250px;
     height: 150px;
 }
+
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
