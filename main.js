@@ -1,6 +1,6 @@
 let texto = document.querySelector(".apresentacao")
 let idade = new Date().getFullYear() - 1999
-texto.innerHTML = `Me chamo Vinícius Dias, tenho ${idade} anos de idade, sou residente de São Paulo estou estudando programação,
+texto.innerHTML = `Me chamo Vinícius Dias, tenho ${idade} anos de idade, sou residente de São Paulo e estou estudando programação e
                    gosto muito de tecnologia e inovação.`
 
 ///////////////////////////////////////////////
